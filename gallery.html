@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .navbar{
+  	margin-bottom: 0;
+  	border-radius: 0;
+  	background-color: #5E4485;
+  	color: #FFF;
+  	padding: 1% 0;
+  	font-size: 1.2em;
+  	border: 0;
+	}
+  .navbar-brand{
+  	float: left; 
+  	min-height: 30px;
+  	padding: 0 15px 5px;
+  }
+  .navbar-inverse .navbar-nav .active a,.navbar-inverse .navbar-nav .active a:focus 
+  .navbar-inverse .navbar-nav .active a:hover {
+  color:#FFF
+
+}
+.navbar-inverse .navbar-nav ul a{
+ color: #D5D5D5  ;
+	}
+	.carousel-caption{
+		top: 50%;
+		transform: translateY(-50%);
+		text-transform: uppercase;
+	}
+	.btn{
+		font-size: 18px;
+		color: #FFF;
+		padding: 12px 22px;
+		background: #5E4485;
+		border: 2px solid #FFF;
+	} 
+	
+	.container{
+		margin: 4% auto;
+	} 
+	p{ 
+		font-size: 18px;
+	}
+	#icon{
+		max-width: 300px;
+		margin: 1% auto; 
+		height: 200px;
+	} 
+	footer{
+		width: 100%;
+		background-color: #5E4485;
+		padding: 3%;
+		color: #FFF;
+	}
+	.fa{
+		padding: 15px;
+		font-size: 25px;
+		color: #FFF;
+	}
+	.fa:hover{
+		color: #D5D5D5;
+		text-decoration: none;
+	}
+	@media(max-width: 900px){
+		.fa{
+			font-size: 20px;
+			padding: 10px;
+		}
+	}
+	@media(max-width: 600px){
+		.carousle-caption{
+			display: none;
+		}
+		#icon{
+			max-width: 150px;
+		}
+		h4{
+			font-size: 1.9em;
+		}
+	}
+
+  </style>
+</head>
+<body> 
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="MyNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="AboutUs.html">About</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<section>
+  <div class="container">
+    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#1">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/1.jpg">
+        </a>
+        <div class="modal fade" id="1" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/1.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the first one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#2">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/2.jpg">
+        </a>
+        <div class="modal fade" id="2" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/2.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the second one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#3">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/3.jpg">
+        </a>
+        <div class="modal fade" id="3" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/3.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the third one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#4">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/4.jpg">
+        </a>
+        <div class="modal fade" id="4" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/4.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the fourth one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#5">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/5.jpg">
+        </a>
+        <div class="modal fade" id="5" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/5.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the fifth one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#6">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/6.jpg">
+        </a>
+        <div class="modal fade" id="6" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/6.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the sixth one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#7">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/7.jpg">
+        </a>
+        <div class="modal fade" id="7" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/7.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the seventh one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#8">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/8.jpg">
+        </a>
+        <div class="modal fade" id="8" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/8.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the eighth one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#9">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/9.jpg">
+        </a>
+        <div class="modal fade" id="9" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/9.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the ninth one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#10">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/10.jpg">
+        </a>
+        <div class="modal fade" id="10" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/10.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the tenth one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#11">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/11.jpg">
+        </a>
+        <div class="modal fade" id="11" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/11.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the leventh one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#12">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/12.jpg">
+        </a>
+        <div class="modal fade" id="12" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/12.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the 12th one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#13">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/13.jpg">
+        </a>
+        <div class="modal fade" id="13" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/13.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the 13th one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#14">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/14.jpg">
+        </a>
+        <div class="modal fade" id="14" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/14.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the 14th one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#15">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/15.jpg">
+        </a>
+        <div class="modal fade" id="15" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/15.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the 15th one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#16">
+          <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/16.jpg">
+        </a>
+        <div class="modal fade" id="16" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img class="img-responsive" src="http://nabeel.co.in/files/bootsnipp/gallery/16.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>This is the 16th one on my Gallery</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
